@@ -52,6 +52,12 @@ summary.aov(model1)
 
 We will reject this null hypothesis, but we will seek clarification on the differences of each of row. 
 
+```{r}
+plot(TukeyHSD(model1))
+```
+
+Using the Turkey boxplot we can tell the front and the middle is different from the back, but there is no difference between the middle and the front.
+
 ## Conclusions
 
 
