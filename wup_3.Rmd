@@ -27,14 +27,14 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
+It appears that the back row is higher than the front and the middle  
   
 ### get fancy  
 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
-
+In this boxplot, we can see the difference that the box in the back row is slightly bigger than the firs boxplot we observed above.
 ## Numerical Summarys 
 
 ## Inferential Tests
