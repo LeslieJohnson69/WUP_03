@@ -38,9 +38,19 @@ In this boxplot, we can see the difference that the box in the back row is sligh
 
 ## Numerical Summarys 
 
-
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+The back row is extremely different because their mean is 9.6, the middle row is only 3.2, and the front row has a low mean of 1.8.
 
 ## Inferential Tests
+
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+We will reject this null hypothesis, but we will seek clarification on the differences of each of row. 
 
 ## Conclusions
 
